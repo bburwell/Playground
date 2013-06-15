@@ -21,6 +21,14 @@
 						}
 					});
 				});
+
+				$('audio').each(function(index) {
+					$(this).on('ended', function() {
+						var id = $(this).attr('id').split(':')[1];
+						var c = document.getElementById('c:'+id);
+						c.innerHTML = 'play';
+					});
+				});
 			});
 		</script>
 		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css">
