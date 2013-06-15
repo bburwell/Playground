@@ -121,7 +121,7 @@
 
 							$datetime = strtotime($date);
 							// $pretty_time = date('l, j F Y') . ' at ' . $time;
-							$pretty_time = date('l, j F Y');
+							$pretty_time = date('l, j F Y', $datetime);
 
 							echo '<li>'
 								. '<a href="#" onclick="return false;" class="ctl" id="c:'.$file.'"></a> '
